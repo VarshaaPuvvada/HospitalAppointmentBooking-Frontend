@@ -14,7 +14,7 @@ export default function UpdateAppointment() {
     });
 
     useEffect(() => {
-        Axios.get(`http://localhost:4000/appointmentRoute/update-appointment/${id}`)
+        Axios.get(`https://hospitalappointmentbooking-backend.onrender.com/appointmentRoute/update-appointment/${id}`)
             .then((res) => {
                 if (res.status === 200) {
                     setAppointment(res.data);
