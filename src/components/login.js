@@ -12,7 +12,7 @@ export default function SignUp(){
 
     const handleSubmit =(event)=>{
         const data={fname:arr[0],lname:arr[1],gender:arr[6],dob:arr[4],age:arr[5],phone:arr[7],email:arr[2],blood:arr[8],allergy:arr[9],password:arr[3]}
-        Axios.post("http://localhost:4000/patientRoute/add-patient",data)
+        Axios.post("https://hospitalappointmentbooking-backend.onrender.com/patientRoute/add-patient",data)
         .then((res)=>{
             if(res.status===200)
                 alert("new record added")

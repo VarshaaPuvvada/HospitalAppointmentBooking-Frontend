@@ -35,7 +35,7 @@ export default function UpdateAppointment() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        Axios.put(`http://localhost:4000/appointmentRoute/update-appointment/${id}`, appointment)
+        Axios.put(`https://hospitalappointmentbooking-backend.onrender.com/appointmentRoute/update-appointment/${id}`, appointment)
             .then((res) => {
                 if (res.status === 200) {
                     alert("Appointment updated successfully");

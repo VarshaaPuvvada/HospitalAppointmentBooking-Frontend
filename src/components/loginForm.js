@@ -10,7 +10,7 @@ export default function LoginForm() {
         event.preventDefault();
         const data = { email, password };
 
-        Axios.post("http://localhost:4000/patientRoute/xyz", data)
+        Axios.post("https://hospitalappointmentbooking-backend.onrender.com/patientRoute/xyz", data)
             .then((res) => {
                 if (res.status === 200) {
                     alert(res.data.message);

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 export default function BookingRow(props) {
     const { _id,email, date, time, spec, reason } = props.obj;
     const handleClick=()=>{
-        Axios.delete("http://localhost:4000/appointmentRoute/delete-appointment/"+_id)
+        Axios.delete("https://hospitalappointmentbooking-backend.onrender.com/appointmentRoute/delete-appointment/"+_id)
         .then((res)=>{
             if(res.status===200){
                 alert("Appointment is deleted");

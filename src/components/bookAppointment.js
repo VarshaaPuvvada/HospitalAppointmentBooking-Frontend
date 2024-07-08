@@ -12,7 +12,7 @@ export default function BookAppointment(){
     const handleSubmit=(event)=>{
         const data={email:arr[0],date:arr[1],time:arr[2],spec:arr[3],reason:arr[4]};
 
-    Axios.post("http://localhost:4000/appointmentRoute/add-appointment",data)
+    Axios.post("https://hospitalappointmentbooking-backend.onrender.com/appointmentRoute/add-appointment",data)
     .then((res)=>{
         if(res.status===200)
             alert("new record added")

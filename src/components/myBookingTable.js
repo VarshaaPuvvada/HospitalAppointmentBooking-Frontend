@@ -7,7 +7,7 @@ export default function MyBookingTable() {
     const [arr, setArr] = useState([]);
 
     useEffect(() => {
-        Axios.get("http://localhost:4000/appointmentRoute/")
+        Axios.get("https://hospitalappointmentbooking-backend.onrender.com/appointmentRoute/")
             .then((res) => {
                 if (res.status === 200)
                     setArr(res.data);

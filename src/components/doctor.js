@@ -7,7 +7,7 @@ export default function Doctor() {
     const [arr, setArr] = useState([]);
 
     useEffect(() => {
-        Axios.get("http://localhost:4000/doctorRoute/")
+        Axios.get("https://hospitalappointmentbooking-backend.onrender.com/doctorRoute/")
             .then((res) => {
                 if (res.status === 200)
                     setArr(res.data);
