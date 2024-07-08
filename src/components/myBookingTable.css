@@ -1,0 +1,47 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.table th, .table td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: black;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+}
+
+.table .btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.table .btn {
+    margin: 5px;
+}
+
+.table .btn-info {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.table .btn-danger {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+    color: rgb(16, 77, 146);
+}
